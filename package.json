@@ -2,20 +2,50 @@
   "name": "q-less",
   "version": "1.0.0",
   "description": "cafeteria crowd managing and food review website",
-  "main": "index.js",
+  "main": "server.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon -r dotenv/config src/index.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "author": "Preran,Srushti,Shravan",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^10.4.20",
     "nodemon": "^3.1.9",
-    "prettier": "^3.4.2"
+    "postcss": "^8.4.49",
+    "prettier": "^3.4.2",
+    "tailwindcss": "^3.4.17"
   },
   "dependencies": {
+    "axios": "^1.7.9",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
-    "mongoose": "^8.9.2"
+    "mongoose": "^8.9.2",
+    "qrcode.react": "^4.2.0",
+    "react-router-dom": "^7.1.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
+
+
+
+
+
